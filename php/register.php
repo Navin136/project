@@ -4,9 +4,9 @@
     $pass= "/";
     $db_name = "phpmyadmin";
     $connect=new mysqli($server_name, $uname, $pass, $db_name);
-    // if ($connect->connect_error){
-    //     die("Connection failed: ");
-    // }
+    if ($connect->connect_error){
+        die("Connection failed: ");
+    }
     $username = $_POST["username"];
     $passwd = $_POST["passwd"];
     $mobile = $_POST["mobile"];
