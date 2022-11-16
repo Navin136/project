@@ -1,12 +1,14 @@
 $(document).ready(function(){
-    $("#subbtn").click(function() {
+    $("#subbtn").click(function(){
         $.ajax({
             url: "php/register.php",
-            type: "post",
+            type: "POST",
             data: $("#regform").serialize(),
-            success: function(res){
-                alert(res);
+            success: function(){
             }
         });
+        // $.get("php/register.php",function(data){
+        //         alert(data);
+        // });
     });
 });
