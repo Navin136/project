@@ -9,11 +9,17 @@
     }
     $username = $_POST["username"];
     $passwd = $_POST["passwd"];
+    $confirmpasswd = $_POST["confirmpasswd"];
     $mobile = $_POST["mobile"];
     $dob = $_POST["dob"];
     $gender = $_POST["gender"];
     $state = $_POST["state"];
-    $sql="INSERT into details (USERNAME,PASSWD,MOBILE,DOB,GENDER,ST) values ('{$username}','{$passwd}','{$mobile}','{$dob}','{$gender}','{$state}')";
-    $connect->query($sql);
-    
+
+    $stmt = $connect->prepare("INSERT INTO details (USERNAME,PASSWD,MOBILE,DOB,GENDER,ST) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssss", $username,$passwd,$mobile,$dob,$gender,$state);
+    $stmt->execute();
+    $stmt->close();
+    $connect->close();
+    echo "<h2 style=\"color:green\";><center> Signed up successfully </center></h1>";
+    echo "<h2> <center>Click <a style=\"color:blue\"; href=\"login.html\">here</a> to Sign in </center></h2>";
 ?>
