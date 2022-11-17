@@ -27,6 +27,8 @@
     else{
         echo "<h2 style=\"color:green\";><center> Wrong Username or password </center></h1>";
         echo "<h2> <center>Click <a style=\"color:blue\"; href=\"login.html\">here</a> to Try Again </center></h2>";
+        echo "<h2> <center>Click <a style=\"color:blue\"; href=\"register.html\">here</a> if you want to register </center></h2>";
+    
     }
     // $stmt->close();
     // $connect->close();

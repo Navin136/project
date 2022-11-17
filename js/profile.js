@@ -1,14 +1,17 @@
 $(document).ready(function(){
     $("#submit").click(function(){
         let username = localStorage.getItem("username");
-        let passwd = =localStorage.getItem("passwd");
-        let dob = localStorage.setItem("dob",$("#dob").val());
-        let mobile = localStorage.setItem("mobile",$("#mobile").val());
-        let state = localStorage.setItem("state",$("#state").val());
+        let passwd = localStorage.getItem("passwd");
+        localStorage.setItem("dob",$("#dob").val());
+        localStorage.setItem("mobile",$("#mobile").val());
+        localStorage.setItem("state",$("#state").val());
+        let dob = localStorage.getItem("dob");
+        let mobile = localStorage.getItem("mobile");
+        let state = localStorage.getItem("state");
         $.ajax({
             url: "php/profile.php",
             type: "POST",
-            data: {},
+            data: {username, passwd, dob, mobile, state},
             success: function(phpresponse1){
                 alert(phpresponse1);
             }

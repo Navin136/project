@@ -1,13 +1,13 @@
 $(document).ready(function(){
   $("#sub").click(function(){
+    let un=$("#uname").val();
+    let ps=$("#passwd").val();
     function vldtlogin(){
-      let x = $("#uname").val();
-      if (x == "") {
+      if (un == "") {
         alert("UserName must be filled");
         return;
       }
-      let pw = $("#passwd").val();
-      if (x == "") {
+      if (ps == "") {
         alert("Password must be filled");
         return;
       }
@@ -19,8 +19,8 @@ $(document).ready(function(){
         success: function(phpresponse){
           $("#result").html(phpresponse);
           if(phpresponse=="Login success"){
-            localStorage.setItem=("username",$("#uname").val());
-            localStorage.setItem=("passwd",$("#passwd").val());
+            localStorage.setItem("username",un);
+            localStorage.setItem("passwd",ps);
             window.location.href="profile.html";
           }
         }
