@@ -15,7 +15,7 @@ div.container{
     border-radius: 10px;
 }
 #inform{
-    padding: 20px;
+    padding: 2% 13%;
 }
 label{
     padding: 5px;
@@ -37,4 +37,5 @@ input#uname,input#passwd{
 }
 #subdiv{
     padding-top: 10px;
+    padding-bottom: 10px;
 }

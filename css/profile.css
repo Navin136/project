@@ -1,0 +1,57 @@
+*{
+    border:0;
+    margin: 0;
+}
+body{
+    background-color: lightcyan;
+}
+.container{
+    padding: 5% 20%;
+    height: 100vh;
+    width: 100%;
+}
+#actfrm{
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+#inform{
+    padding: 2% 20%;
+}
+label{
+    padding: 5px;
+
+}
+h2{
+    font-weight: bolder;
+}
+p{
+    font-size: large;
+}
+#mobile{
+    width: 122px;
+}
+#state{
+    width: 84px;
+}
+#submit{
+    background-color: green;
+    border-radius: 12px;
+    padding: 5px 5px;
+}
+#reset{
+    background-color: red;
+    border-radius: 12px;
+    padding: 5px 5px;
+}
+#subdiv{
+    padding-top: 10px;
+
+}
+#resdiv{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#result{
+    padding-left: 5%;
+    padding-bottom: 20px;
+}

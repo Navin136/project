@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    if(!localStorage.getItem("username")){
+        window.location.url="login.html";
+    }
+    $("#reset").click(function(){
+        localStorage.clear();
+        window.location.href="register.html";
+    });
     $("#submit").click(function(){
         let username = localStorage.getItem("username");
         let passwd = localStorage.getItem("passwd");
@@ -12,8 +19,9 @@ $(document).ready(function(){
             url: "php/profile.php",
             type: "POST",
             data: {username, passwd, dob, mobile, state},
-            success: function(phpresponse1){
-                alert(phpresponse1);
+            success: function(phpresponse){
+                $("#container").hide();
+                $("#result").html(phpresponse);
             }
         });
     });

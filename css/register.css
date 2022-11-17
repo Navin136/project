@@ -15,7 +15,7 @@ div.container{
     border-radius: 10px;
 }
 #inform{
-    padding: 20px;
+    padding: 2% 13%;
 }
 label{
     padding: 5px;
@@ -33,12 +33,22 @@ p{
     width: 200px;
     font-weight: bolder;
 }
-#confirmpasswd{
+input#uname{
+    width: 169px;
 }
-input#uname,input#passwd,input#confirmpasswd,input#mobile{
-    width: 180px;
+input#passwd{
+    width: 171px;
+}
+input#confirmpasswd{
+    width: 114px;
+}
+input#email{
+    width: 200px;
 }
 #subdiv{
     padding-top: 10px;
     padding-bottom: 10px;
+}
+#confirmpasswd{
+    width: 90px;
 }

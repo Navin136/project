@@ -13,7 +13,10 @@
 </head>
 <body>
     <form id="proform">
-        <div id="result"></div>
+        <div class="container">
+        <h2>Profile:</h2>
+        <div id="actfrm">
+        <div id="inform">
         <div>
             <label for="dob">Date of Birth:</label>
             <input type="date" id="dob" name="dob">
@@ -31,9 +34,16 @@
                 <option value="Telangana">Telangana</option>
             </select>
         </div>
+        <div id="subdiv">
+            <input type="button" id="submit" value="Update">
         <div>
-            <input type="button" id="submit" value="Update Profile">
+        <div id="resdiv">
+            <input type="button" id="reset" value="Clear & Logout">
         </div>
+    </div>
+    </div>
+    </div>
     </form>
+    <div id="result"></div>
 </body>
 </html>
