@@ -10,7 +10,7 @@
     $username = $_POST["username"];
     $passwd = $_POST["passwd"];
     $confirmpasswd = $_POST["confirmpasswd"];
-    $mobile = $_POST["mobile"];
+    $email = $_POST["email"];
     
     function preuser($un){
             $server_name = "localhost";
@@ -44,8 +44,8 @@
 
     }
     else{
-        $stmt = $connect->prepare("INSERT INTO details (USERNAME,PASSWD,MOBILE) VALUES ( ?, ?, ?)");
-        $stmt->bind_param("sss", $username,$passwd,$mobile);
+        $stmt = $connect->prepare("INSERT INTO details (USERNAME,PASSWD,EMAIL) VALUES ( ?, ?, ?)");
+        $stmt->bind_param("sss", $username,$passwd,$email);
         $stmt->execute();
         $stmt->close();
         $connect->close();
