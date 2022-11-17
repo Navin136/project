@@ -12,6 +12,28 @@
     <title>Profile Page</title>
 </head>
 <body>
-    
+    <form id="proform">
+        <div id="result"></div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div>
+            <label for="contact">Mobile  No:</label>
+            <input type="number" id="contact" name="contact">
+        </div>
+        <div>
+            <label for="state">Select Your state:</label>
+            <select name="state" id="state">
+                <option value="TamilNadu">Tamil Nadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Telangana">Telangana</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" id="submit" value="Update Profile">
+        </div>
+    </form>
 </body>
 </html>

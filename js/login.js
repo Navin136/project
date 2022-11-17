@@ -19,7 +19,8 @@ $(document).ready(function(){
         success: function(phpresponse){
           $("#result").html(phpresponse);
           if(phpresponse=="Login success"){
-            localStorage.setItem=("username",$("#uname").val())
+            localStorage.setItem=("username",$("#uname").val());
+            localStorage.setItem=("passwd",$("#passwd").val());
             window.location.href="profile.html";
           }
         }
