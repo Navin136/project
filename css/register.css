@@ -31,9 +31,14 @@ p{
     background-color: green;
     border-radius: 30px;
     width: 200px;
+    font-weight: bolder;
 }
 #confirmpasswd{
 }
 input#uname,input#passwd,input#confirmpasswd,input#mobile{
     width: 180px;
+}
+#subdiv{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
