@@ -11,13 +11,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
 </head>
-<body>
+<body><div class="container">
+    <div name="result" id="result">
+    </div>
     <form id="regform">
-        <div name="result" id="result">
-        </div>
+        <h2>Login Form:</h2>
+        <div id="actfrm">
+        <div id="inform">
         <div>
-            <label for="uname">UserID:</label>
-            <input type="text" id="uname" name="username" placeholder="Enter username here .." >
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" name="username" placeholder="Enter username here " >
         </div>
         <div>
             <label for="passwd">Password:</label>
@@ -25,7 +28,7 @@
         </div>
         <div>
             <label for="confirmpasswd">Confirm Password:</label>
-            <input type="password" id="confirmpasswd" name="confirmpasswd" placeholder="Enter Password Again .." >
+            <input type="password" id="confirmpasswd" name="confirmpasswd" placeholder="Enter Password Again" >
         </div>
         <div>
             <label for="mobile">Mobile Number:</label>
@@ -54,6 +57,9 @@
         <div>
             <input type="button" id="submit" value="submit">
         </div>
+    </div>
+    </div>
     </form>
+    </div>
 </body>
 </html>
