@@ -11,12 +11,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
 </head>
-<body><div class="container">
+<body>
+    <div class="container">
+    <div name="result" id="result"></div>
     <form id="loginform">
         <h2>Login Form:</h2>
+        <div id="actfrm">
+        <div id="inform">
         <div>
-            <input type="button" id="submit" value="submit">
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" name="username" placeholder="Enter username here " >
         </div>
+        <div>
+            <label for="passwd">Password:</label>
+            <input type="password" id="passwd" name="passwd" placeholder="Enter Password here " >
+        </div>
+        <div>
+        <div id="subdiv">
+            <input type="button" id="sub" value="submit">
+        </div>
+    </div>
+    </div>
     </form>
     </div>
 </body>
